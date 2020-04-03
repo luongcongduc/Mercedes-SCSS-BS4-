@@ -1,0 +1,67 @@
+.input{
+    background:$color-black-2;
+    height:90px;
+    
+    .input__search{
+        
+        width:84%;
+        margin:auto;
+        form{
+            display: flex;
+            
+        .form-control{
+            background-color:$color-white-1;
+            border:none;
+            margin-top:26px;
+            transition:none;
+            -webkit-transition: none;
+            -o-transition: none;
+            -ms-transition:none;
+            -moz-transition: none;
+            // khi xem thuộc tính hover, focus ta bấm chuot phải chon :how de chon
+            &:focus{
+                box-shadow:none;
+                background-color:$color-white-0;
+                border-top:1px solid $color-gray-4;
+                border-bottom:1px solid $color-gray-4;
+                border-left:1px solid $color-gray-4;
+            }
+            &:focus + .input-group-prepend{
+                .input-group-text{
+                    border-top:1px solid $color-gray-4;
+                    border-bottom:1px solid $color-gray-4;
+                    border-right:1px solid $color-gray-4;
+                    background:$color-white-0;
+                    color:$color-red-0;
+                    
+                }
+                &:hover{
+                    .input-group-text{
+                        background-color:$color-red-0;
+                        color:$color-white-0;
+                    }
+                }
+            }
+
+        }
+        .input-group-prepend{
+            .input-group-text{
+                background-color:$color-white-1;
+                color:$color-red-0;
+                border:none;
+                margin-top:26px;
+                // cursor: pointer;
+                i{
+                    cursor: pointer;
+                }
+            }
+            &:hover{
+                .input-group-text{
+                    background-color:$color-red-0;
+                    color:$color-white-0;
+                }
+            }
+        }
+    }
+}
+}

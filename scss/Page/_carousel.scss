@@ -1,0 +1,102 @@
+.carousel {
+    .carousle__container {
+        margin: auto;
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    height: 720px;
+                }
+                .carousel-caption {
+                    text-align: left;
+                    top: 8%;
+                    left: 8%;
+                    .box {
+                        .box__border {
+                            border: 1px solid white;
+                            width: 80px;
+                            margin-bottom: 50px;
+                            -webkit-transform: translateY(-100%);
+                            transform: translateY(-100%);
+                            opacity: 0;
+                            -webkit-transition: all 0.5s;
+                            transition: all 0.5s;
+                            -webkit-transition-delay: 0.25s;
+                            transition-delay: 0.25s;
+                        }
+                        a {
+                            text-decoration: none;
+                            width: 45%;
+                            h1 {
+                                color: $color-white-0;
+                                font-size: 30px;
+                                transform: translateY(-100%);
+                                -webkit-transform: translateY(-100%);
+                                -moz-transform: translateY(-100%);
+                                -o-transform: translateY(-100%);
+                                opacity: 0;
+                                transition: all 0.5s;
+                                -webkit-transition: all 0.5s;
+                                transition-delay: 0.25s;
+                                -webkit-transition-delay: 0.25s;
+                                &::before {
+                                    @include before($color-white-0);
+                                }
+                            }
+                        }
+                        button {
+                            display: block;
+                            margin-top: 30px;
+                            transform: translateY(-100%);
+                            -webkit-transform: translateY(-100%);
+                            opacity: 0;
+                            transition: opacity 0.5s, -webkit-transform 0.5s;
+                            -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+                            transition: transform 0.5s, opacity 0.5s;
+                            transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+                            -webkit-transition-delay: 0.5s;
+                            transition-delay: 0.5s;
+                            
+                        }
+                        p {
+                            margin-top: 400px;
+                            font-size: 14px;
+                            opacity: 0;
+                            transform: translateY(-100%);
+                            -webkit-transform: translateY(-100%);
+                            transition: all 0.5s;
+                            -webkit-transition: all 0.5s;
+                            transition-delay: 0.8s;
+                            -webkit-transition-delay: 0.8s;
+                        }
+                    }
+                }
+            }
+            .carousel-item.active {
+                .box {
+                    // .box__border{
+                    //     // opacity: 1;
+                    //     // -webkit-transform: translateY(0);
+                    //     //         transform:translateY(0);
+                    // }
+                    a {
+                        h1 {
+                            opacity: 1;
+                            -webkit-transform: translateY(0);
+                            transform: translateY(0);
+                        }
+                    }
+                    button {
+                        opacity: 1;
+                        -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                    }
+                    p {
+                        opacity: 1;
+                        -webkit-transform: translateY(0);
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}

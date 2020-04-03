@@ -1,0 +1,8 @@
+.carousle__container {
+    .button__mer {
+        @include styleButton($color-white-0, $color-black-2, $color-black-1, $pd-0, $pd-2);
+        &:hover {
+            @include hoverButton($color-white-0, $color-black-3);
+        }
+    }
+}

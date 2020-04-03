@@ -1,0 +1,28 @@
+.footer__wrap{
+    max-width:1680px;
+    width:100%;
+    margin:0 auto;
+    .footer__box{
+        margin:0 20px;
+        .nav__top{
+            @include nav-link($color-black-4,$color-blue-0,$pd-1,$mg-0);
+            .nav-link{
+                font-size:14px;  
+                       
+            }
+            #link{
+                color:$color-blue-0;
+            }
+            span{
+                margin-left:15px;
+            }
+          
+        }
+        .nav__center{
+            @include nav-link($color-black-4,$color-blue-0,$pd-0,$mg-4);
+            .nav-link{
+                font-size:12px;
+            }
+        }
+    }
+}

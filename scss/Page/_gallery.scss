@@ -1,0 +1,38 @@
+.gallery {
+    .gallery__wrap {
+        max-width: 96%;
+        margin: 0 auto;
+        .gallery__box {
+            margin: 0 20px;
+            .row {
+                // margin: 0;
+                .gallery__list {
+                    padding: 0;
+                    .title {
+                        font-size: 26px;
+                        &::before {
+                            @include before($color-white-0);
+                        }
+                    }
+                    hr {
+                        border-top: 1px solid rgba(80, 76, 76, 0.7);
+                    }
+                    ul{
+                        list-style: none;
+                        margin-top:30px;
+                        a{
+                            text-decoration: none;
+                            color:#999;
+                            font-size:13px;
+                            transition: color .5s;
+                            &:hover{
+                                color:$color-blue-0;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

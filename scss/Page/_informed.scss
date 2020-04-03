@@ -1,0 +1,144 @@
+.informed {
+    .informer__wrap {
+        max-width: 1680px;
+        width: 100%;
+        margin: 30px auto;
+        .informer__box {
+            margin: 0 20px;
+            h4 {
+                font-size:26px;
+                &::before {
+                    @include before($color-white-0);
+                }
+            }
+            hr {
+                border-top: 1px solid rgba(80, 76, 76, 0.7);
+            }
+            .informer__row{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
+                color:#999;
+                .sign__up{
+                    width:100%;
+                    p{
+                        font-size:13px;
+                    }
+                    .sign__up-form{
+                        .sign__up-form-control{
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            margin:20px 0;
+                            input{
+                                background: #2a2a2a;
+                                border:1px solid #2a2a2a;
+                                color:#fff;
+                                display: block;
+                                height:38px;
+                                max-width:66,66667%;
+                                width:50%;
+                                padding:3px 16px;
+                            }
+                            button{
+                                background: -webkit-gradient(linear,left top, left bottom,from(#242424),to(#0b0b0b));
+                                background: linear-gradient(#242424,#0b0b0b);
+                                border-bottom-color: #0b0b0b;
+                                border-left-color:#2a2a2a;
+                                border-radius: 0;
+                                border-right-color:#0b0b0b;
+                                border-style: solid;
+                                border-top-color:#242424;
+                                border-width:1px;
+                                width:24%;
+                                color:#999;
+                                font-size:13px;
+                                -webkit-transition: all .5s;
+                                        transition: all .5s;
+                                &:hover{
+                                    color:$color-blue-0;
+                                }
+                            }
+                        }
+                        .privacy{
+                            label{
+                                font-size:13px;
+                                padding-left: 10px;
+                                cursor: pointer;
+                                a{
+                                    text-decoration: none;
+                                    color:white;
+                                    -webkit-transition: color .5s;
+                                            transition: color .5s;
+                                    &:hover{
+                                        color:$color-blue-0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .logo{
+                    width:100%;
+                    margin-top:62px;
+                    p{
+                        font-size:13px;
+                    }
+                    ul{
+                        list-style: none;
+                        li{
+                            display: inline;
+                            padding-right:60px;
+                            a{
+                                font-size:20px;
+                                color:#999;
+                                .fa-xing{
+                                    line-height:5;
+                                }
+                                
+                            }
+                            i:hover{
+                                color:$color-blue-0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .operate{
+        max-width:1680px;
+        width:100%;
+        margin:0 auto;
+        .orerate__box{
+            margin:0 20px;
+            hr{
+                border-top:1px solid rgba(80, 76, 76, 0.7);
+            }
+            .oprate__logo{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                .logo-img{
+                    padding:50px 0;
+                    a{
+                        img{
+                            height:2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
